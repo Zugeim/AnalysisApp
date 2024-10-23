@@ -377,6 +377,7 @@ class VisualExploration():
     def cat_2_num(col):
         if VisualExploration.is_categorical(col.dtypes):
             new_col = col.astype('category').cat.codes
+            new_col = pd.to_numeric(new_col, errors='coerce').astype('int64'),
             return new_col
         
     # Función para pintar las reglas en 3D
