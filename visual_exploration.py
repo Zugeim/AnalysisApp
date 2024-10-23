@@ -375,7 +375,7 @@ class VisualExploration():
         
     @staticmethod
     def cat_2_num(col):
-        if not is_numeric_dtype(col):
+        if VisualExploration.is_categorical(col.dtypes):
             new_col = col.astype('category')
             new_col = col.cat.codes
             return new_col
