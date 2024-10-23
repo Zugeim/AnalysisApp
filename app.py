@@ -8,7 +8,7 @@ Created on Mon Oct 14 21:31:20 2024
 import os
 import pandas as pd
 import numpy as np
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import seaborn as sns
 from visual_exploration import VisualExploration
 import streamlit as st
